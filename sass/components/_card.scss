@@ -1,0 +1,65 @@
+.skill-box,
+.portfolio-box {
+	background-color: rgba($color-white, .8);
+	font-size: 1.5rem;
+	padding: 4rem 6rem;
+	text-align: center;
+	border-radius: 3px;
+	box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+	transition: transform .3s;
+	margin-bottom: 3rem;
+
+	&:not(:last-child) {
+		margin-right: 3rem;
+
+	}
+
+
+	&__icon {
+		font-size: 6rem;
+		margin-bottom: 2rem;
+		display: inline-block;
+		background-image: linear-gradient(to right, $color-pink, $color-pink-dark);
+		-webkit-background-clip: text;
+		color: transparent;
+
+
+	}
+
+	img {
+		height: 12rem;
+		width: auto;
+		margin-bottom: 2rem;
+
+
+	}
+
+	a {
+		text-decoration: none;
+		color: $color-grey-dark;
+	}
+
+	&:hover {
+		transform: translateY(-1.5rem) scale(1.03);
+	}
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+	.skill-box,
+	.portfolio-box {
+		margin-right: 0rem;
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+	.skill-box,
+	.portfolio-box {
+		margin-right: 0rem;
+	}
+}

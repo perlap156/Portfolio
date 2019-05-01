@@ -1,0 +1,45 @@
+.section-skills {
+
+	padding: 20rem 15rem;
+	background-image:
+		linear-gradient(to right bottom, rgba($color-pink, 0.7), rgba($color-pink-dark, 0.7)), url(../img/portfolio-1.jpg);
+	background-size: cover;
+	margin-top: -10rem;
+	transform: skewY(-7deg);
+
+	&__row {
+		display: flex;
+		flex-direction: row;
+		grid-gap: 100px 2rem;
+		justify-content: center;
+	}
+
+	& > * {
+		transform: skewY(7deg);
+	}
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+	.section-skills {
+
+		&__row {
+			flex-direction: column;
+		}
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+	.section-skills {
+		padding: 20rem 2rem;
+
+		&__row {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}

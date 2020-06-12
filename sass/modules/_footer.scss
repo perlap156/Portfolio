@@ -1,0 +1,23 @@
+.footer-list {
+	display: grid;
+	grid-template-columns: repeat(4, 100px);
+	grid-gap: 0.5em;
+	margin: 1em 0em;
+
+	@media screen and (max-width: 475px) {
+		grid-template-columns: repeat(4, 65px);
+	}
+
+	&__link {
+		list-style-type: none;
+	
+		a {
+			text-decoration: none;
+			color: $color-grey;
+
+			&:hover {
+				color: $color-pink-3;
+			}
+		}
+	}
+}

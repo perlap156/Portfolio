@@ -1,0 +1,116 @@
+/** Header Section **/
+
+//Header
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: right;
+    justify-content: center;
+    padding: 2em 0em;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      text-align: center;
+      //max-width: 23rem;
+      padding-bottom: 2em;
+      margin: 0 auto;
+    }
+
+    &__text {
+      background-color: $color-pink-2;
+      color: $color-white-2;
+      padding: 2.5em 1.5em;
+      position: relative;
+      left: 3em;
+      max-width: 85%;
+      width: 30em;
+
+      @media screen and (max-width: 800px) {
+        position: unset;
+        left: 0em;
+      }
+
+      @media screen and (max-width: 602px) {
+        padding: 1em 1.5em;
+        max-width: 100%;
+        width: unset;
+      }
+
+      h1, h2 {
+        letter-spacing: 0.05em;
+      }
+
+      h1 {
+        @media screen and (max-width: 942px) {
+          font-size: 4rem;
+        }
+
+        @media screen and (max-width: 602px) {
+          font-size: 3rem;
+        }
+      }
+ 
+      h2 {
+        @media screen and (max-width: 602px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    &__img {
+      position: relative;
+      left: -3em;
+
+      @media screen and (max-width: 800px) {
+        position: unset;
+        left: 0em;
+      }
+
+      img {
+        width: 375px;
+        height: auto;
+
+        @media screen and (max-width: 602px) {
+          width: 250px;
+        }
+      }
+    }
+
+  }
+  
+  //scroll icon
+  .scroll-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-grey;
+    padding-bottom: 2em;
+  }
+  
+  .scroll-icon {
+    display: block;
+    position: relative;
+    height: 3em;
+    width: 1.5em;
+    border: 0.25em solid $color-grey;
+    border-radius: 1em;
+    margin-bottom: 0.5em;
+  
+    &__dot {
+      display: block;
+      position: absolute;
+      left: 50%;
+      background: $color-grey;
+      height: 0.5em;
+      width: 0.5em;
+      top: 0.6em;
+      margin-left: -0.25em;
+      border-radius: 50%;
+      transform-origin: top center;
+      backface-visibility: hidden;
+      animation: scroll 2s ease-out infinite;
+    }
+  }
+  

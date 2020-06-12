@@ -1,0 +1,31 @@
+.about-container {
+    background-color: $color-pink;
+   // padding: 5rem 15rem;
+ //   margin-bottom: 5rem;
+
+
+    &__img {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    &__text {
+        color: $color-white;
+        max-width: 90%;
+
+        @media screen and (max-width: 799px) {
+            text-align: center;
+        }
+
+        h2 {
+            padding-bottom: 1.5rem;        
+        }
+
+        p {
+            padding-bottom: 3em;
+        }
+    }
+
+}

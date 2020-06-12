@@ -2,14 +2,11 @@ body {
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
 	font-size: $default-font-size;
-	line-height: 1.7;
-	color: $color-grey-dark;
-	background-color: $color-grey-light-2;
-	padding: 3rem;
+	background-color: $color-white-2;
 }
 
 h1 {
-	font-size: 4.9rem;
+	font-size: 5rem;
 }
 
 h2 {
@@ -28,107 +25,46 @@ h5 {
 	font-size: 2rem;
 }
 
-
-
-.heading-primary {
-	color: $color-black-1;
+.all-caps {
 	text-transform: uppercase;
+  }
 
-	display: flex;
-	flex-direction: column;
-
-	backface-visibility: hidden;
-	margin-bottom: 6rem;
-
-	&--main {
-		font-size: 5rem;
-		font-weight: 400;
-		letter-spacing: 2rem;
-
-	}
-
-	&--sub {
-		font-size: 2rem;
-		font-weight: 700;
-		letter-spacing: 1.75rem;
-		letter-spacing: 3.3rem;
-
-	}
+.alpha {
+	font-size: 5rem;
 }
 
-.heading-secondary {
-	font-size: 3.5rem;
-	text-transform: uppercase;
-	font-weight: 700;
-
-	display: inline-flex;
-	background-image: linear-gradient(to right, $color-pink, $color-pink-dark);
-	-webkit-background-clip: text;
-	color: transparent;
-	letter-spacing: 1rem;
-	transition: all .2s;
-	text-align: center;
-
-	&:hover {
-		transform: skewY(-2deg) skewX(15deg) scale(1.1);
-		text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
-		line-height: 1.7;
-	}
+.beta {
+	font-size: 3.9rem;
 }
 
-.heading-tertiary {
-	font-size: $default-font-size;
-	font-weight: 700;
-	text-transform: uppercase;
+.gamma {
+	font-size: 3.1rem;
 }
 
-p {
-	display: block;
-	font-size: $default-font-size;
-	letter-spacing: 2px;
-	margin-bottom: 5rem;
-
-	&:not {
-		margin-bottom: 3rem;
-	}
+.delta {
+	font-size: 2.5rem;
 }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-	.heading-primary {
-		&--main {
-			font-size: 3rem;
-			letter-spacing: 1rem;
-		}
+.epsilon {
+	font-size: 2rem;
+}
+  
+.mega {
+	font-size: 7rem;
 
-		&--sub {
-			font-size: 1.3rem;
-			letter-spacing: 1.72rem;
-		}
+	@media screen and (max-width: 1039px) {
+		font-size: 6.5rem;
 	}
+
+	@media screen and (max-width: 897px){
+		font-size: 5.5rem;
+	}
+  }
+
+.mini {
+	font-size: 1.5rem;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	.heading-primary {
-		&--main {
-			font-size: 1.8rem;
-			letter-spacing: .5rem;
-		}
-
-		&--sub {
-			font-size: 1.2rem;
-			letter-spacing: .5rem;
-		}
-	}
-
-	.heading-secondary {
-		font-size: 2.5rem;
-	}
-
-	p {
-
-		letter-spacing: .5px;
-
-	}
+.micro {
+	font-size: 1rem;
 }

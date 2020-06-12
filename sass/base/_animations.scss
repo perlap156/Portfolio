@@ -1,4 +1,23 @@
 //Animations
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      transform: translateY(0.75em);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+  }
+  
 @keyframes moveInLeft {
 	0% {
 		opacity: 0;
@@ -54,3 +73,5 @@
 		transform: translate(0);
 	}
 }
+
+

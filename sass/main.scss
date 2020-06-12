@@ -1,20 +1,14 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
 @import "abstracts/variables";
 
 @import "base/animations";
 @import "base/base";
+@import "base/buttons";
+@import "base/layouts";
 @import "base/typography";
 @import "base/utilities";
+@import "base/containers";
 
-@import "components/button";
-@import "components/card";
-
-@import "layout/footer";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/navigation";
-
-@import "sections/about";
-@import "sections/skills";
-@import "sections/portfolio";
+@import "modules/about";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/timeline";

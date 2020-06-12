@@ -1,0 +1,12 @@
+//TWO COL Layout
+.l-two-cols {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(550px, auto));
+    grid-gap: 2em;
+    align-items: center;
+
+    @media screen and (max-width: 799px) {
+        grid-template-columns: unset;
+        justify-items: center;
+    }
+}
